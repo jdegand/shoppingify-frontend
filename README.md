@@ -62,6 +62,7 @@
 - [React](https://reactjs.org)
 - [Axios](https://axios-http.com)
 - [Material Design Icons](https://materialdesignicons.com)
+- [Recharts](https://recharts.org/en-US)
 
 ## Features
 
@@ -121,10 +122,11 @@ $ npm start
 - Added keyboard functionality for the plus button and item panel - should be able to add items to list and save it all with keyboard - checkbox works with spacebar but not with enter key
 - Handle case when no shopping history and no stats to display - right now shows empty chart on stats page
 - problem with list names being unique - can't have different users have same list name ? Problem with having list being a separate model ?
+- need to wrap nav in a header tag ?
 
 ## Useful Resources
 
-- [Stack Overflow](https://stackoverflow.com/questions/56828017/testing-usecontext-with-react-testing-library) - testing usecontext
+- [Stack Overflow](https://stackoverflow.com/questions/56828017/testing-usecontext-with-react-testing-library) - testing useContext
 - [Code Sandbox](https://codesandbox.io/s/r4m5jp6jjq) - Vertical React Tabs
 - [Stack Overflow](https://stackoverflow.com/questions/11755628/can-i-use-div-as-a-direct-child-of-ul) - div direct child of ul
 - [React Router Docs](https://reactrouter.com/en/main/components/nav-link) - nav link
@@ -134,19 +136,19 @@ $ npm start
 - [Dev.to](https://dev.to/samba_code/nested-ternary-statements-in-react-jsx-35kp) - nested ternary statements in react
 - [Codepen](https://codepen.io/huferr/pen/GRmZJJx) - react tabs
 - [React Docs](https://beta.reactjs.org/learn/updating-objects-in-state) - updating objects in state
-- [Stack Overflow](https://stackoverflow.com/questions/63614183/react-router-dom-link-how-can-i-put-an-id-into-the-path-of-link)
+- [Stack Overflow](https://stackoverflow.com/questions/63614183/react-router-dom-link-how-can-i-put-an-id-into-the-path-of-link) - react router id & links
 - [React Router Docs](https://reactrouter.com/en/main/components/link) - link
 - [Ultimate Courses](https://ultimatecourses.com/blog/query-strings-search-params-react-router) - search params react router 6
 - [Mongoose Docs](https://mongoosejs.com/docs/defaults.html) - mongoose defaults
-- [Stack Overflow](https://stackoverflow.com/questions/52954908/add-an-object-with-setstate-to-an-array-of-objects) 
-- [Stack Overflow](https://stackoverflow.com/questions/71938368/how-to-prevent-adding-duplicate-objects-into-array-in-state-in-reactjs)
-- [AppsLoveWorld](https://www.appsloveworld.com/reactjs/200/440/how-to-avoid-pushing-duplicate-objects-in-state-array-in-reactjs)
+- [Stack Overflow](https://stackoverflow.com/questions/52954908/add-an-object-with-setstate-to-an-array-of-objects) - add an object with setState to array of objects 
+- [Stack Overflow](https://stackoverflow.com/questions/71938368/how-to-prevent-adding-duplicate-objects-into-array-in-state-in-reactjs) - prevent duplicate objects in state
+- [AppsLoveWorld](https://www.appsloveworld.com/reactjs/200/440/how-to-avoid-pushing-duplicate-objects-in-state-array-in-reactjs) - avoid pushing duplicate objects
 - [Stack Overflow](https://stackoverflow.com/questions/8837050/allow-specific-tag-to-override-overflowhidden) - override overflow hidden
-- [Stack Overflow](https://stackoverflow.com/questions/35663653/make-a-scrollbar-always-visible-in-a-div-chrome)
+- [Stack Overflow](https://stackoverflow.com/questions/35663653/make-a-scrollbar-always-visible-in-a-div-chrome) - make scrollbar always visible
 - [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/) - multiple checkboxes in react
 - [Stack Overflow](https://stackoverflow.com/questions/32923255/react-checkbox-doesnt-toggle) - checkbox & react
 - [Pluralsight](https://www.pluralsight.com/guides/handling-multiple-inputs-with-single-onchange-handler-react) - handling multiple inputs with single onchange handler
-- [Stack Overflow](https://stackoverflow.com/questions/11922383/how-can-i-access-and-process-nested-objects-arrays-or-json)
+- [Stack Overflow](https://stackoverflow.com/questions/11922383/how-can-i-access-and-process-nested-objects-arrays-or-json) - nested object arrays
 - [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat) - array flat
 - [Stack Overflow](https://stackoverflow.com/questions/68075339/javascript-find-in-nested-array) - find in nested array
 - [YouTube](https://www.youtube.com/watch?v=10CehsAWk7E) - find unique objects in array
@@ -161,18 +163,17 @@ $ npm start
 - [Stack Overflow](https://stackoverflow.com/questions/155188/trigger-a-button-click-with-javascript-on-the-enter-key-in-a-text-box) - keyup enter key
 - [Stack Overflow](https://stackoverflow.com/questions/41580032/group-the-same-category-objects) - group the same category objects
 - [Stack Overflow](https://stackoverflow.com/questions/14446511/most-efficient-method-to-groupby-on-an-array-of-objects) - groupby on an array of objects
-- [Stack Overflow](https://stackoverflow.com/questions/56247433/how-to-use-setstate-callback-on-react-hooks)
-- [Stack Overflow](https://stackoverflow.com/questions/70223082/updated-variable-is-not-rendered)
-- [Stack Overflow](https://stackoverflow.com/questions/71804437/how-to-display-the-values-from-a-map-on-a-react-web-app-javascript)
-- [ReactTraining](https://reacttraining.com/blog/how-to-use-and-not-use-state/)
-- [FreeCodeCamp](https://www.freecodecamp.org/news/iterate-through-nested-object-in-react-js/)
-- [Stack Overflow](https://stackoverflow.com/questions/61938375/having-trouble-listing-all-values-of-json-using-map-in-react)
-- [Stack Overflow](https://stackoverflow.com/questions/40803828/how-can-i-map-through-an-object-in-reactjs)
+- [Stack Overflow](https://stackoverflow.com/questions/56247433/how-to-use-setstate-callback-on-react-hooks) - setState callback with react hooks
+- [Stack Overflow](https://stackoverflow.com/questions/70223082/updated-variable-is-not-rendered) - updated variable is not rendered
+- [Stack Overflow](https://stackoverflow.com/questions/71804437/how-to-display-the-values-from-a-map-on-a-react-web-app-javascript) - display values from a map object in react
+- [ReactTraining](https://reacttraining.com/blog/how-to-use-and-not-use-state/) - react state
+- [FreeCodeCamp](https://www.freecodecamp.org/news/iterate-through-nested-object-in-react-js/) - iterate nested object in react
+- [Stack Overflow](https://stackoverflow.com/questions/61938375/having-trouble-listing-all-values-of-json-using-map-in-react) - map object & react
+- [Stack Overflow](https://stackoverflow.com/questions/40803828/how-can-i-map-through-an-object-in-reactjs) - map through an object in react
 - [Bobby Hadz](https://bobbyhadz.com/blog/react-map-nested-array) - react map nested array
 - [Stack Overflow](https://stackoverflow.com/questions/53605759/react-setting-state-to-an-es6-map) - react setting state to an es6 map
-- [Recharts](https://recharts.org/en-US)
 - [Bobby Hadz](https://bobbyhadz.com/blog/javascript-sum-values-of-object) - sum values of object
-- [Stack Overflow](https://stackoverflow.com/questions/44752138/in-react-how-to-pass-a-dynamic-variable-to-a-const-css-style-list)
+- [Stack Overflow](https://stackoverflow.com/questions/44752138/in-react-how-to-pass-a-dynamic-variable-to-a-const-css-style-list) - dynamic variable & react inline style
 - [Stack Overflow](https://stackoverflow.com/questions/64671325/how-do-i-set-the-width-of-a-component-in-my-react-web-app-based-off-the-output-o) - width of a component based off a variable react
 - [Stack Overflow](https://stackoverflow.com/questions/45100477/how-to-render-a-object-in-react) - render an object in react
 - [Bobby Hadz](https://bobbyhadz.com/blog/javascript-count-occurrences-of-each-element-in-array) - count occurrences of each element in array
