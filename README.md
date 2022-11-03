@@ -178,35 +178,35 @@ $ npm start
 - [Stack Overflow](https://stackoverflow.com/questions/45100477/how-to-render-a-object-in-react) - render an object in react
 - [Bobby Hadz](https://bobbyhadz.com/blog/javascript-count-occurrences-of-each-element-in-array) - count occurrences of each element in array
 - [Blog](https://www.paigeniedringhaus.com/blog/build-and-custom-style-recharts-data-charts) - recharts data charts
-- [Stack Overflow](https://stackoverflow.com/questions/19480008/javascript-merging-objects-by-id)
-- [Stack Overflow](https://stackoverflow.com/questions/70797166/how-to-match-objects-with-the-same-key-value-pairs-passed-as-arguments)
-- [Stack Overflow](https://stackoverflow.com/questions/52311150/find-all-matching-elements-with-in-an-array-of-objects)
+- [Stack Overflow](https://stackoverflow.com/questions/19480008/javascript-merging-objects-by-id) - merge object by id
+- [Stack Overflow](https://stackoverflow.com/questions/70797166/how-to-match-objects-with-the-same-key-value-pairs-passed-as-arguments) - match objects with same key value pair
+- [Stack Overflow](https://stackoverflow.com/questions/52311150/find-all-matching-elements-with-in-an-array-of-objects) - matching elements within an array of objects
 - [YouTube](https://www.youtube.com/watch?v=Gj0ZOr0N6Ck) - React Charts
-- [Stack Overflow](https://stackoverflow.com/questions/6913512/how-to-sort-an-array-of-objects-by-multiple-fields)
-- [Stack Overflow](https://stackoverflow.com/questions/59269676/change-the-value-of-object-in-an-array-on-click-event)
+- [Stack Overflow](https://stackoverflow.com/questions/6913512/how-to-sort-an-array-of-objects-by-multiple-fields) - sort an array of objects by multiple fields
+- [Stack Overflow](https://stackoverflow.com/questions/59269676/change-the-value-of-object-in-an-array-on-click-event) - change value of object in array on click event
 - [Stack Overflow](https://stackoverflow.com/questions/59633005/how-is-eslint-integrated-into-create-react-app) - eslint integration with create react app
 - [Codepen](https://codepen.io/anon/pen/YwWRVb) - react tooltip (have to add react and reactDOM to see it working) - change end to ReactDOM.render
 - [Paladini Blog](https://paladini.dev/posts/how-to-make-an-extremely-reusable-tooltip-component-with-react--and-nothing-else/) - reusable tooltip
 - [Codesandbox](https://codesandbox.io/s/how-to-make-an-extremely-reusable-tooltip-component-with-react-and-nothing-else-7opo3?from-embed=&file=/src/App.js) - extremely reusable tooltip component 
-- [TestCafe](https://testcafe.io/402905/resources/blog/2020-12-28-randomize-your-end-to-end-tests-how-to-generate-input-data-for-testcafe)
+- [TestCafe](https://testcafe.io/402905/resources/blog/2020-12-28-randomize-your-end-to-end-tests-how-to-generate-input-data-for-testcafe) - randomize e2e tests
 - [Reddit](https://www.reddit.com/r/copypasta/comments/78yfyh/wall_of_text/) - wall of text
 - [Stack Abuse](https://stackabuse.com/how-to-scroll-to-top-in-react-with-a-button-component/) - scroll 
 - [Stack Overflow](https://stackoverflow.com/questions/36862334/get-viewport-window-height-in-reactjs) - get viewport width and height
-- [Stack Overflow](https://stackoverflow.com/questions/33211672/how-to-submit-a-form-using-enter-key-in-react-js)
-- [Stack Overflow](https://stackoverflow.com/questions/54579558/clicking-a-link-when-enter-key-is-pressed-using-react)
+- [Stack Overflow](https://stackoverflow.com/questions/33211672/how-to-submit-a-form-using-enter-key-in-react-js) - submit form on enter key
+- [Stack Overflow](https://stackoverflow.com/questions/54579558/clicking-a-link-when-enter-key-is-pressed-using-react) - click a link with keyboard
 - [Github](https://github.com/remix-run/react-router/issues/6600) - react router onKeyPress
-- [Stack Overflow](https://stackoverflow.com/questions/33850412/merge-javascript-objects-in-array-with-same-key)
-- [Stack Overflow](https://stackoverflow.com/questions/5732043/how-to-call-reduce-on-an-array-of-objects-to-sum-their-properties)
-- [YouTube](https://www.youtube.com/watch?v=6rNIY7W8IZM)
-- [Medium](https://vmarchesin.medium.com/using-array-prototype-reduce-in-objects-using-javascript-dfcdae538fc8)
-- [Stack Overflow](https://stackoverflow.com/questions/29886552/why-are-objects-not-iterable-in-javascript)
-- [Stack Overflow](https://stackoverflow.com/questions/62219461/merge-same-object-property-name-and-combine-other-properties-in-one-array-object)
-- [TutorialsPoint](https://www.tutorialspoint.com/add-matching-object-values-in-javascript)
-- [Stack Overflow](https://stackoverflow.com/questions/65870360/how-to-combine-objects-with-same-value-in-an-array)
+- [Stack Overflow](https://stackoverflow.com/questions/33850412/merge-javascript-objects-in-array-with-same-key) - merge objects
+- [Stack Overflow](https://stackoverflow.com/questions/5732043/how-to-call-reduce-on-an-array-of-objects-to-sum-their-properties) - reduce on array of objects
+- [YouTube](https://www.youtube.com/watch?v=6rNIY7W8IZM) - reduce on array of objects
+- [Medium](https://vmarchesin.medium.com/using-array-prototype-reduce-in-objects-using-javascript-dfcdae538fc8) - array reduce
+- [Stack Overflow](https://stackoverflow.com/questions/29886552/why-are-objects-not-iterable-in-javascript) - objects are not iterable
+- [Stack Overflow](https://stackoverflow.com/questions/62219461/merge-same-object-property-name-and-combine-other-properties-in-one-array-object) - merge objects
+- [TutorialsPoint](https://www.tutorialspoint.com/add-matching-object-values-in-javascript) - matching object values
+- [Stack Overflow](https://stackoverflow.com/questions/65870360/how-to-combine-objects-with-same-value-in-an-array) - combine objects 
 - [Stack Overflow](https://stackoverflow.com/questions/39966125/using-indexof-to-filter-an-array) - indexOf and filter
-- [TutorialsPoint](https://www.tutorialspoint.com/merge-javascript-objects-with-the-same-key-value-and-count-them)
-- [Dev.to](https://dev.to/ramonak/javascript-how-to-merge-multiple-objects-with-sum-of-values-43fd)
-- [Stack Overflow](https://stackoverflow.com/questions/41824462/sum-of-same-object-name-in-javascript)
+- [TutorialsPoint](https://www.tutorialspoint.com/merge-javascript-objects-with-the-same-key-value-and-count-them) - merge js objects
+- [Dev.to](https://dev.to/ramonak/javascript-how-to-merge-multiple-objects-with-sum-of-values-43fd) - merge multiple objects
+- [Stack Overflow](https://stackoverflow.com/questions/41824462/sum-of-same-object-name-in-javascript) - sum of same object name 
 - [Stack Overflow](https://stackoverflow.com/questions/24444738/sum-similar-keys-in-an-array-of-objects) - sum similar keys in an array of objects
 
 ## Acknowledgements
