@@ -19,43 +19,81 @@
 
 ### Screenshots
 
-![](shoppingify-register.png)
+![Register](screenshots/shoppingify-register.png)
 
-![](shoppingify-sign-in.png)
+***
 
-![](shoppingify-items.png)
+![Sign In](screenshots/shoppingify-sign-in.png)
 
-![](shoppingify-add-new-item.png)
+***
 
-![](shoppingify-shopping-history.png)
+![Items](screenshots/shoppingify-items.png)
 
-![](shoppingify-stats-1.png)
+***
 
-![](shoppingify-stats-2.png)
+![Add New Item](screenshots/shoppingify-add-new-item.png)
 
-![](shoppingify-item-detail.png)
+***
 
-![](shoppingify-item-in-cart.png)
+![Shopping History](screenshots/shoppingify-shopping-history.png)
 
-![](shoppingify-quantity-panel.png)
+***
 
-![](shoppingify-quantity-panel-changed.png)
+![Stats 1](screenshots/shoppingify-stats-1.png)
 
-![](shoppingify-item-editing-1.png)
+***
 
-![](shoppingify-item-editing-2.png)
+![Stats 2](screenshots/shoppingify-stats-2.png)
 
-![](shoppingify-new-list.png)
+***
 
-![](shoppingify-list-detail.png)
+![Item Detail](screenshots/shoppingify-item-detail.png)
 
-![](shoppingify-stats-updated.png)
+***
 
-![](shoppingify-mobile-1.png)
+![Item in Chart](screenshots/shoppingify-item-in-cart.png)
 
-![](shoppingify-mobile-2.png)
+***
 
-![](shoppingify-mobile-3.png)
+![Quantity Panel](screenshots/shoppingify-quantity-panel.png)
+
+***
+
+![Quantity Panel Changed](screenshots/shoppingify-quantity-panel-changed.png)
+
+***
+
+![Item Editing 1](screenshots/shoppingify-item-editing-1.png)
+
+***
+
+![Item Editing 2](screenshots/shoppingify-item-editing-2.png)
+
+***
+
+![New List](screenshots/shoppingify-new-list.png)
+
+***
+
+![List Detail](screenshots/shoppingify-list-detail.png)
+
+***
+
+![Stats Updated](screenshots/shoppingify-stats-updated.png)
+
+***
+
+![Mobile 1](screenshots/shoppingify-mobile-1.png)
+
+***
+
+![Mobile 2](screenshots/shoppingify-mobile-2.png)
+
+***
+
+![Mobile 3](screenshots/shoppingify-mobile-3.png)
+
+***
 
 ### Built With
 
@@ -86,14 +124,14 @@ $ npm start
 
 ## Thoughts
 
-- Added basic testing with Cypress 
-- Used a cypress.env.json for env variables in the cypress tests 
+- Added basic testing with Cypress
+- Used a `cypress.env.json` for `env` variables in the Cypress tests.
 - Need to change username for register test each time - could possibly use nanoid for random value for name but can't reuse that user for login tests easily - have to look up in mongo atlas
 - Can install eslint plugin to prevent errors in terminal when looking at the cypress e2e test files
 - Home component holds state - pass as props to other components
 - Project may have benefited from global state management but I do not think it is necessary
 - No categories selection panel
-- Build this desktop first - is design really mobile friendly? - mobile styling based on 375px width - did not look at all possible screen sizes - Tweaks are required for most sizes since I used grids with set pixel values vs percentages 
+- Build this desktop first - is design really mobile friendly? - mobile styling based on 375px width - did not look at all possible screen sizes - Tweaks are required for most sizes since I used grids with set pixel values vs percentages
 - Overflow containers could be annoying on mobile
 - Put the item panel after the other 2 sections - easiest mobile solution
 - Mobile - ItemDetail comes after the cart - not great at all - scroll to its location?
@@ -103,26 +141,26 @@ $ npm start
 - I think that would help a lot for mobile - as you could replace the items section with itemDetail or itemPanel components
 - Tons of data manipulation done versus more network requests - performance optimizations definitely possible here - useMemo etc
 - Stats page - use all lists from all users or per user - I originally had it for all list items and switched to per-user
-- Top Categories - categories in lists versus total categories used in all lists 
-- Top Items - overall percentage of items purchased across all lists (items / total items) 
-- Had to repeat overflow containers often.   
-- Had multiple 'missing key' warnings - should be mostly solved - I used nanoid - using map inside of another map, need to give keys to both wrapping divs? 
+- Top Categories - categories in lists versus total categories used in all lists
+- Top Items - overall percentage of items purchased across all lists (items / total items)
+- Had to repeat overflow containers often.
+- Had multiple 'missing key' warnings - should be mostly solved - I used nanoid - using map inside of another map, need to give keys to both wrapping divs?
 - Could have put navbar and listpanel inside of layout component
 - Change navbar tabs to nav-links and add styling for active link
 - I went with tab system not tied to react router - using react router preferrable - better for bookmarking & accessbility
-- Changing to nav-links requires changing the :/id api routes - using query params vs search params - need to duplicate backend route - one for each approach or could try to use ' req.params.id || req.query.id' logic in route 
+- Changing to nav-links requires changing the :/id api routes - using query params vs search params - need to duplicate backend route - one for each approach or could try to use ' req.params.id || req.query.id' logic in route
 - The state of the list feature is half-baked - should list be available to update & where ? - in the shopping history detail view ?
-- If all items are purchased (crossed-out), the list is complete - otherwise it is active.  Saving a cancelled list makes no sense. 
-- Nor should saving a list require multiple prompts as design implies - creating friction in the process -> lose users who get tired of the process 
+- If all items are purchased (crossed-out), the list is complete - otherwise it is active.  Saving a cancelled list makes no sense.
+- Nor should saving a list require multiple prompts as design implies - creating friction in the process -> lose users who get tired of the process
 - Add toggling of purchased items in the shopping history detail component - the purchased property is present and can be accessed inside of it - I cross out items on list that are purchased - send api request back to update the list and grab list id from url
 - Didn't use gray for input labels - harder to see for no real benefit
 - Various styling differences - disabled input border, bottle
-- Tooltip reminded me -> if something needs to used multiple times -> make a component for it -> this can sometimes slip your mind and you find yourself using multiple state values and multiple handlers 
-- The ItemDetail Component had a lot of functionality that I kept removing as development progressed - its click handler had to be moved to the Link component otherwise keyboard functionality would have been broken 
+- Tooltip reminded me -> if something needs to used multiple times -> make a component for it -> this can sometimes slip your mind and you find yourself using multiple state values and multiple handlers
+- The ItemDetail Component had a lot of functionality that I kept removing as development progressed - its click handler had to be moved to the Link component otherwise keyboard functionality would have been broken
 - Added keyboard functionality for the plus button and item panel - should be able to add items to list and save it all with keyboard - checkbox works with spacebar but not with enter key
 - Handle case when no shopping history and no stats to display - right now shows empty chart on stats page
 - problem with list names being unique - can't have different users have same list name ? Problem with having list being a separate model ?
-- need to wrap nav in a header tag ?
+- need to wrap nav in a header tag?
 
 ## Useful Resources
 
@@ -140,7 +178,7 @@ $ npm start
 - [React Router Docs](https://reactrouter.com/en/main/components/link) - link
 - [Ultimate Courses](https://ultimatecourses.com/blog/query-strings-search-params-react-router) - search params react router 6
 - [Mongoose Docs](https://mongoosejs.com/docs/defaults.html) - mongoose defaults
-- [Stack Overflow](https://stackoverflow.com/questions/52954908/add-an-object-with-setstate-to-an-array-of-objects) - add an object with setState to array of objects 
+- [Stack Overflow](https://stackoverflow.com/questions/52954908/add-an-object-with-setstate-to-an-array-of-objects) - add an object with setState to array of objects
 - [Stack Overflow](https://stackoverflow.com/questions/71938368/how-to-prevent-adding-duplicate-objects-into-array-in-state-in-reactjs) - prevent duplicate objects in state
 - [AppsLoveWorld](https://www.appsloveworld.com/reactjs/200/440/how-to-avoid-pushing-duplicate-objects-in-state-array-in-reactjs) - avoid pushing duplicate objects
 - [Stack Overflow](https://stackoverflow.com/questions/8837050/allow-specific-tag-to-override-overflowhidden) - override overflow hidden
@@ -187,10 +225,10 @@ $ npm start
 - [Stack Overflow](https://stackoverflow.com/questions/59633005/how-is-eslint-integrated-into-create-react-app) - eslint integration with create react app
 - [Codepen](https://codepen.io/anon/pen/YwWRVb) - react tooltip (have to add react and reactDOM to see it working) - change end to ReactDOM.render
 - [Paladini Blog](https://paladini.dev/posts/how-to-make-an-extremely-reusable-tooltip-component-with-react--and-nothing-else/) - reusable tooltip
-- [Codesandbox](https://codesandbox.io/s/how-to-make-an-extremely-reusable-tooltip-component-with-react-and-nothing-else-7opo3?from-embed=&file=/src/App.js) - extremely reusable tooltip component 
+- [Codesandbox](https://codesandbox.io/s/how-to-make-an-extremely-reusable-tooltip-component-with-react-and-nothing-else-7opo3?from-embed=&file=/src/App.js) - extremely reusable tooltip component
 - [TestCafe](https://testcafe.io/402905/resources/blog/2020-12-28-randomize-your-end-to-end-tests-how-to-generate-input-data-for-testcafe) - randomize e2e tests
 - [Reddit](https://www.reddit.com/r/copypasta/comments/78yfyh/wall_of_text/) - wall of text
-- [Stack Abuse](https://stackabuse.com/how-to-scroll-to-top-in-react-with-a-button-component/) - scroll 
+- [Stack Abuse](https://stackabuse.com/how-to-scroll-to-top-in-react-with-a-button-component/) - scroll
 - [Stack Overflow](https://stackoverflow.com/questions/36862334/get-viewport-window-height-in-reactjs) - get viewport width and height
 - [Stack Overflow](https://stackoverflow.com/questions/33211672/how-to-submit-a-form-using-enter-key-in-react-js) - submit form on enter key
 - [Stack Overflow](https://stackoverflow.com/questions/54579558/clicking-a-link-when-enter-key-is-pressed-using-react) - click a link with keyboard
@@ -206,9 +244,9 @@ $ npm start
 - [Stack Overflow](https://stackoverflow.com/questions/39966125/using-indexof-to-filter-an-array) - indexOf and filter
 - [TutorialsPoint](https://www.tutorialspoint.com/merge-javascript-objects-with-the-same-key-value-and-count-them) - merge js objects
 - [Dev.to](https://dev.to/ramonak/javascript-how-to-merge-multiple-objects-with-sum-of-values-43fd) - merge multiple objects
-- [Stack Overflow](https://stackoverflow.com/questions/41824462/sum-of-same-object-name-in-javascript) - sum of same object name 
+- [Stack Overflow](https://stackoverflow.com/questions/41824462/sum-of-same-object-name-in-javascript) - sum of same object name
 - [Stack Overflow](https://stackoverflow.com/questions/24444738/sum-similar-keys-in-an-array-of-objects) - sum similar keys in an array of objects
 
 ## Acknowledgements
 
-- [Vitor Paladini](https://github.com/vtrpldn) - reused his tooltip 
+- [Vitor Paladini](https://github.com/vtrpldn) - reused his tooltip
