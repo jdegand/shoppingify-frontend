@@ -796,6 +796,7 @@ dd {
   .list__panel__container {
     grid-area: cart;
     padding: 0;
+    height: auto;
   }
 
   .shopping__history__container {
@@ -815,10 +816,6 @@ dd {
   .shopping__history__icon {
     width: 24px;
     height: 24px;
-  }
-
-  .list__panel__container {
-    height: auto;
   }
 
   .stats__container {
