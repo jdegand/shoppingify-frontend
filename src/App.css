@@ -126,14 +126,9 @@
   transition: top 250ms ease-in-out;
 }
 
-input:focus + .floatingLabel {
+input:focus+.floatingLabel {
   top: -1rem;
 }
-/*
-input:valid + .floatingLabel {
-  top: -1rem;
-}
-*/
 
 .orange {
   color: #f7a61d;
@@ -180,7 +175,7 @@ input:valid + .floatingLabel {
   bottom: -10px;
 }
 
-.instructions > svg {
+.instructions>svg {
   margin-right: 0.25rem;
 }
 
@@ -282,8 +277,6 @@ input:valid + .floatingLabel {
   height: 50px;
   position: absolute;
   z-index: -1;
-  /* left:25px; */
-  /*bottom: 110px;*/
 }
 
 .navbar__shopping__icon__count {
@@ -343,19 +336,6 @@ input:valid + .floatingLabel {
   align-items: center;
   margin-block: 20px 50px;
 }
-
-/* always have a scrollbar
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: rgba(0,0,0,.5);
-  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-}
-*/
 
 #items__search {
   background-image: url(./magnify.svg);
@@ -470,7 +450,6 @@ dd {
   border: 3px solid #f7a61d;
   color: #f7a61d;
   font-weight: bolder;
-  /* width: 75px; */
   height: 35px;
   margin: 0;
   font-size: 24px;
@@ -505,7 +484,8 @@ dd {
 
 .list__panel__save__btn:disabled {
   background: lightgray;
-  opacity: 1; /* set to 0.5 for all disabled buttons in index.css */
+  opacity: 1;
+  /* set to 0.5 for all disabled buttons in index.css */
 }
 
 .list__panel__input__disabled {
@@ -523,7 +503,7 @@ dd {
   border-radius: 10px;
 }
 
-.quantity__panel > span {
+.quantity__panel>span {
   margin-inline-end: 10px;
 }
 
@@ -663,7 +643,7 @@ dd {
   margin-inline: 10px;
 }
 
-.meter > span {
+.meter>span {
   display: block;
   height: 100%;
   border-radius: 16px;
@@ -730,6 +710,7 @@ dd {
 .Tooltip-Tip.top {
   top: -25px;
 }
+
 /* CSS border triangles */
 .Tooltip-Tip.top::before {
   top: 100%;
@@ -742,6 +723,7 @@ dd {
   top: 50%;
   transform: translateX(0) translateY(-50%);
 }
+
 /* CSS border triangles */
 .Tooltip-Tip.right::before {
   left: -6px;
@@ -754,6 +736,7 @@ dd {
 .Tooltip-Tip.bottom {
   bottom: -6px;
 }
+
 /* CSS border triangles */
 .Tooltip-Tip.bottom::before {
   bottom: 100%;
@@ -767,6 +750,7 @@ dd {
   top: 50%;
   transform: translateX(0) translateY(-50%);
 }
+
 /* CSS border triangles */
 .Tooltip-Tip.left::before {
   left: auto;
@@ -794,6 +778,7 @@ dd {
       "navbar items"
       "cart cart";
   }
+
   nav {
     grid-area: navbar;
   }
