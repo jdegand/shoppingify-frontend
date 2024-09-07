@@ -122,9 +122,7 @@ const Stats = () => {
       chartData.push(obj);
     }
 
-    const sortedChartData = chartData.sort(function (a, b) {
-      return a.order - b.order;
-    });
+    const sortedChartData = chartData.toSorted((a, b) => a.order - b.order);
 
     setData(sortedChartData);
 
