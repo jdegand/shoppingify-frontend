@@ -208,7 +208,7 @@ const ListPanel = (props) => {
 
   const handleKeyDownEdit = (e) => {
     if (e.key === "Enter") {
-      toggleEditMode(prev => !prev);
+      toggleEditMode();
     }
   };
 
