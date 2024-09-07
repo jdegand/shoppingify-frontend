@@ -125,7 +125,7 @@ const ListPanel = (props) => {
   };
 
   const handleListName = (e) => {
-    setListName((prev) => e.target.value);
+    setListName(e.target.value);
   };
 
   const handleUpdateListItems = (e, index) => {
@@ -183,21 +183,21 @@ const ListPanel = (props) => {
   };
 
   const handleCancel = (e) => {
-    setEditMode((prev) => !prev);
+    setEditMode(prev => !prev);
     props.setList(originalList);
   };
 
   const handleComplete = (e) => {
     e.preventDefault();
     // don't have to do anything - list is already updated
-    setEditMode((prev) => !prev);
+    setEditMode(prev => !prev);
   };
 
   const handleDeleteList = (e) => {
     e.preventDefault();
     setOriginalList([]);
     props.setList([]);
-    setEditMode((prev) => !prev);
+    setEditMode(prev => !prev);
   };
 
   const handleQuantityKeyDown = (e, index) => {
@@ -208,7 +208,7 @@ const ListPanel = (props) => {
 
   const handleKeyDownEdit = (e) => {
     if (e.key === "Enter") {
-      toggleEditMode((prev) => !prev);
+      toggleEditMode(prev => !prev);
     }
   };
 
