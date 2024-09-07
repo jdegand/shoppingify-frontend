@@ -7,7 +7,6 @@ const ItemPanel = (props) => {
   const [item, setItem] = useState({});
 
   const [searchParams] = useSearchParams();
-  //console.log(searchParams.get('item'));
 
   useEffect(() => {
     const getItem = async () => {
@@ -27,7 +26,6 @@ const ItemPanel = (props) => {
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      // || e.key === " "
       handleBackBtn();
     }
   };
@@ -45,7 +43,6 @@ const ItemPanel = (props) => {
   };
 
   const handleAddList = () => {
-    //console.log('here', {...item, itemId: searchParams.get('item'), quantity: 1, editing: false, purchased: false, categoryName: item.category.categoryName})
     props.setList((prev) => [
       ...prev,
       {

@@ -39,24 +39,6 @@ const Stats = () => {
 
         const arr = response.data.map((el) => el.items).flat();
 
-        /*
-        // There's a bug - Items Count is off - using forEach causes a mutation? I thought it was copied
-
-        var output = [];
-        arr.forEach((elem) => {
-          var found = false;
-          for (var i = 0; i < output.length; i++) {
-            if (output[i].itemName === elem.itemName) {
-              output[i].quantity += elem.quantity;
-              found = true;
-              break;
-              }
-            }
-            if (!found) {
-              output.push(elem);
-            }
-        });
-        */
         const output = arr.map((elem) => {
           var result = [];
           var found = false;
@@ -103,12 +85,6 @@ const Stats = () => {
       "December",
     ];
 
-    /*
-    const totalItems = lists
-      .reduce((prev, curr) => prev.concat(curr.items), [])
-      .map((item) => item.quantity);
-    */
-
     const totalCategories = lists
       .reduce((prev, curr) => prev.concat(curr.items), [])
       .map((item) => item.categoryName);
@@ -139,11 +115,9 @@ const Stats = () => {
       let obj = {};
       obj["name"] = monthsOfItemsPurchased[i];
       obj["items"] = totalItemsByMonth
-        // problem with indexOf conditional item.date.indexOf(monthsOfItemsPurchased[i]) !== -1 ?
-        .filter((item) => item.date.indexOf(monthsOfItemsPurchased[i]) > -1) // .filter((item) => item.date.indexOf(monthsOfItemsPurchased[i]) !== -1)
+        .filter((item) => item.date.indexOf(monthsOfItemsPurchased[i]) > -1)
         .map((item) => item.count)
         .reduce((acc, value) => Number(acc) + Number(value), 0);
-      //.reduce((acc,value)=> acc + value.count, 0)
       obj["order"] = month.indexOf(monthsOfItemsPurchased[i]);
       chartData.push(obj);
     }
@@ -153,7 +127,6 @@ const Stats = () => {
     });
 
     setData(sortedChartData);
-    //const januaryItems = totalItemsByMonth.filter(item => item.date.indexOf('January') !== -1).map(item => item.count).reduce((acc, value) => Number(acc) + Number(value),0)
 
     setCategoriesCount(new Set(totalCategories).size);
 

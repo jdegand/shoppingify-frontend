@@ -9,7 +9,6 @@ const ShoppingHistoryDetail = (props) => {
   const { auth } = useAuth();
 
   const [searchParams] = useSearchParams();
-  //console.log(searchParams.get('list'));
 
   const [list, setList] = useState({});
   const [formattedData, setFormattedData] = useState();
@@ -36,7 +35,6 @@ const ShoppingHistoryDetail = (props) => {
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      // || e.key === " "
       props.setTabToHistory();
     }
   };

@@ -202,20 +202,17 @@ const ListPanel = (props) => {
 
   const handleQuantityKeyDown = (e, index) => {
     if (e.key === "Enter") {
-      // || e.key === " "
       toggleItemEditing(e, index);
     }
   };
 
   const handleKeyDownEdit = (e) => {
     if (e.key === "Enter") {
-      // || e.key === " "
       toggleEditMode((prev) => !prev);
     }
   };
 
-  /* Problem with css containers with ItemPanel - fixed by using same class list__panel__itemForm  */
-
+  /* Problem with CSS containers - fixed by using same class list__panel__itemForm  */
   return (
     <>
       {togglePanel && !props.showItemDetail && (

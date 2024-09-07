@@ -19,7 +19,6 @@ const Home = (props) => {
 
   const handleKeyDownFirstChild = (e) => {
     if (e.key === "Enter") {
-      // || e.key === " "
       setTab((prev) => e.target.firstChild.alt);
     }
   };
@@ -43,7 +42,6 @@ const Home = (props) => {
 
   const handleKeyDownPlusClick = (e) => {
     if (e.key === "Enter") {
-      // || e.key === " "
       // replaced listDuplicate - can't get the id
       if (
         list.some(
@@ -98,13 +96,6 @@ const Home = (props) => {
       // change quantity of existing item on same click - or not allow this?
       return;
     } else {
-      // use the e target ______ to filter categories to get item details
-
-      //console.log('categories',categories) // need to map thru items to find the correct item and pass that item's details into the list
-
-      // quick hack to get category name
-      //console.log('category?', e.target.parentElement.parentElement.parentElement.parentElement.firstChild.innerText)
-
       let allItems = categories.map((cat) => cat.items);
 
       let itemDetailsOfItemClicked = allItems
@@ -114,17 +105,6 @@ const Home = (props) => {
             item.itemName ===
             e.target.parentElement.parentElement.parentElement.innerText
         );
-
-      //console.log('itemDetailsOfItemClicked', itemDetailsOfItemClicked)
-
-      /* bad idea to derive state from categories - need to use categories to get item details 
-            for(let items of categories) {
-                setListItems(prev => [...prev, ...items.items])
-            }
-
-            console.log('listItems', listItems)
-            // for in loop to get all items and add the items to list array
-      */
 
       setList((prev) => {
         return [

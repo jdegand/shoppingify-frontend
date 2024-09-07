@@ -7,7 +7,6 @@ import Layout from "./components/Layout";
 import RequireAuth from "./components/RequireAuth";
 import PersistLogin from "./components/PersistLogin";
 import Home from "./components/Home";
-//import Items from './components/Items';
 import "./App.css";
 
 function App() {
