@@ -1,8 +1,6 @@
-<h1 align="center">Shoppingify Frontend</h1>
+# Shoppingify Frontend
 
-<div align="center">
-   Solution for a challenge from  <a href="https://legacy.devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x" target="_blank">Devchallenges.io</a>.
-</div>
+Solution for a challenge from [DevChallenges.io](https://legacy.devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x).
 
 ## Table of Contents
 
@@ -12,6 +10,7 @@
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Thoughts](#thoughts)
+- [Continued Development](#continued-development)
 - [Useful Resources](#useful-resources)
 - [Acknowledgements](#acknowledgements)
 
@@ -118,7 +117,7 @@ $ git clone https://jdegand.github.io/shoppingify-frontend
 # Install dependencies in both repos
 $ npm install
 
-# Add env variables && Run both apps  (in browser - enable cookies)
+# Add env variables && run both apps (match PORT number with BASE_URL in axios.js) (in browser - enable cookies)
 $ npm start
 ```
 
@@ -161,6 +160,14 @@ $ npm start
 - Handle case when no shopping history and no stats to display - right now shows empty chart on stats page
 - problem with list names being unique - can't have different users have same list name ? Problem with having list being a separate model ?
 - need to wrap nav in a header tag?
+
+## Continued Development
+
+- Styling issues. "Completed" will overflow with present grid in the shopping list history component.
+- Refactor some component logic.
+- Folder structure improvements
+- Look into Cypress test improvements.
+- Migrate from Create React App or just update dependencies.
 
 ## Useful Resources
 
@@ -240,7 +247,7 @@ $ npm start
 - [Stack Overflow](https://stackoverflow.com/questions/29886552/why-are-objects-not-iterable-in-javascript) - objects are not iterable
 - [Stack Overflow](https://stackoverflow.com/questions/62219461/merge-same-object-property-name-and-combine-other-properties-in-one-array-object) - merge objects
 - [TutorialsPoint](https://www.tutorialspoint.com/add-matching-object-values-in-javascript) - matching object values
-- [Stack Overflow](https://stackoverflow.com/questions/65870360/how-to-combine-objects-with-same-value-in-an-array) - combine objects 
+- [Stack Overflow](https://stackoverflow.com/questions/65870360/how-to-combine-objects-with-same-value-in-an-array) - combine objects
 - [Stack Overflow](https://stackoverflow.com/questions/39966125/using-indexof-to-filter-an-array) - indexOf and filter
 - [TutorialsPoint](https://www.tutorialspoint.com/merge-javascript-objects-with-the-same-key-value-and-count-them) - merge js objects
 - [Dev.to](https://dev.to/ramonak/javascript-how-to-merge-multiple-objects-with-sum-of-values-43fd) - merge multiple objects
