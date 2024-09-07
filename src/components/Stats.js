@@ -40,14 +40,14 @@ const Stats = () => {
         const arr = response.data.map((el) => el.items).flat();
 
         const output = arr.map((elem) => {
-          var result = [];
-          var found = false;
+          const result = [];
+          let found = false;
 
           if (!found) {
             result.push(elem);
           }
 
-          for (var i = 0; i < result.length; i++) {
+          for (let i = 0; i < result.length; i++) {
             if (result[i].itemName === elem.itemName) {
               result[i].quantity = elem.quantity; //  += here - causes doubling since I add the quantity together again later - remove later sum function?
               found = true;
