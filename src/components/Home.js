@@ -8,7 +8,7 @@ import useAxiosPrivate from "../hooks/useAxiosPrivate";
 import ShoppingHistoryDetail from "./ShoppingHistoryDetail";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
-const Home = (props) => {
+const Home = () => {
   const axiosPrivate = useAxiosPrivate();
   const [categories, setCategories] = useState([]);
   const [fetchCategories, setFetchCategories] = useState(false);
@@ -19,16 +19,16 @@ const Home = (props) => {
 
   const handleKeyDownFirstChild = (e) => {
     if (e.key === "Enter") {
-      setTab((prev) => e.target.firstChild.alt);
+      setTab(e.target.firstChild.alt);
     }
   };
 
-  const setTabToHistory = (e) => {
-    setTab((prev) => "History");
+  const setTabToHistory = () => {
+    setTab("History");
   };
 
   const handleTab = (e) => {
-    setTab((prev) => e.target.alt);
+    setTab(e.target.alt);
   };
 
   const { width } = useWindowDimensions();
