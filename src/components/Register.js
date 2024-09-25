@@ -101,7 +101,7 @@ const Register = () => {
           <h2>Register</h2>
           <form className="form" onSubmit={handleSubmit}>
             <label htmlFor="username">
-              Username:
+              Username:&nbsp;
               <span className={validName ? "valid" : "hide"}>&#10003;</span>
               <span className={validName || !user ? "hide" : "invalid"}>
                 &#120;
@@ -134,7 +134,7 @@ const Register = () => {
             </p>
 
             <label htmlFor="password">
-              Password:
+              Password:&nbsp;
               <span className={validPwd ? "valid" : "hide"}>&#10003;</span>
               <span className={validPwd || !pwd ? "hide" : "invalid"}>
                 &#120;
@@ -169,13 +169,13 @@ const Register = () => {
             </p>
 
             <label htmlFor="confirm_pwd">
-              Confirm Password:
-              <p className={validMatch && matchPwd ? "valid" : "hide"}>
+              Confirm Password:&nbsp;
+              <span className={validMatch && matchPwd ? "valid" : "hide"}>
                 &#10003;
-              </p>
-              <p className={validMatch || !matchPwd ? "hide" : "invalid"}>
+              </span>
+              <span className={validMatch || !matchPwd ? "hide" : "invalid"}>
                 &#120;
-              </p>
+              </span>
             </label>
             <input
               type="password"
