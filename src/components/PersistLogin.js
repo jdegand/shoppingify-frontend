@@ -17,18 +17,28 @@ const PersistLogin = () => {
       } catch (err) {
         console.error(err);
       } finally {
-        isMounted && setIsLoading(false);
+        if (isMounted) {
+          setIsLoading(false);
+        }
       }
     };
 
-    !auth?.accessToken && persist ? verifyRefreshToken() : setIsLoading(false);
+    if (!auth?.accessToken && persist) {
+      verifyRefreshToken();
+    } else {
+      setIsLoading(false);
+    }
 
-    return () => (isMounted = false);
-  }, [auth.accessToken, persist, refresh]);
+    return () => {
+      isMounted = false;
+    };
+  }, [auth?.accessToken, persist, refresh]);
 
-  return (
-    <>{!persist ? <Outlet /> : isLoading ? <p>Loading...</p> : <Outlet />}</>
-  );
+  if (!persist) {
+    return <Outlet />;
+  }
+
+  return isLoading ? <p>Loading...</p> : <Outlet />;
 };
 
 export default PersistLogin;
