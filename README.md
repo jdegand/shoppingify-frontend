@@ -1,6 +1,6 @@
 # Shoppingify Frontend
 
-Solution for a challenge from [DevChallenges.io](https://legacy.devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x).
+Solution for a challenge from [DevChallenges.io](https://web.archive.org/web/20231130033807/https://legacy.devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x).
 
 ## Table of Contents
 
@@ -103,7 +103,7 @@ Solution for a challenge from [DevChallenges.io](https://legacy.devchallenges.io
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://legacy.devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://web.archive.org/web/20231130033807/https://legacy.devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x) was to build an application to complete the given user stories. **Note**: The previous design document may be incomplete, as you need to find an archived version of the challenge as all `legacy` challenges have had their documentation removed from DevChallenges.
 
 ## How To Use
 
@@ -111,8 +111,8 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository & the companion backend repo
-$ git clone https://jdegand.github.io/shoppingify-backend
-$ git clone https://jdegand.github.io/shoppingify-frontend
+$ git clone https://github.com/jdegand/shoppingify-backend.git
+$ git clone https://github.com/jdegand/shoppingify-frontend.git
 
 # Install dependencies in both repos
 $ npm install
